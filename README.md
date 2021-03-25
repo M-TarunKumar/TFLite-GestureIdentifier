@@ -70,12 +70,12 @@ to perform each inference in milliseconds.
 For more information about executing inferences with TensorFlow Lite, read
 [TensorFlow Lite inference](https://www.tensorflow.org/lite/guide/inference).
 
-# Develop
+## Develop
 Please send pull requests for improvements and bug fixes in [this](https://github.com/M-TarunKumar/TFLite-GestureIdentifier) github repository.
 
-# License
+## License
 Python files in this repository are released under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) 
 
-# Reference
+## Reference
 [TensorFlow Lite Python classification example with Pi Camera](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/raspberry_pi)
 
