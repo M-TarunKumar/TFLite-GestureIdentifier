@@ -1,0 +1,6 @@
+0:fingers crossed
+1:ok
+2:rock on
+3:stop
+4:thumbs down
+5:thumbs up
