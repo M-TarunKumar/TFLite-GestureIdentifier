@@ -46,7 +46,7 @@ git clone https://github.com/M-TarunKumar/TFLite-GestureIdentifier.git
 Then use download.sh script to install a couple of Python packages:
 
 ```
-# The script takes an argument specifying where you want to save the model files
+cd TFLite-GestureIdentifier
 bash download.sh
 ```
 
@@ -54,9 +54,7 @@ bash download.sh
 ## Run the example
 
 ```
-python3 classify_picamera.py \
-  --model gesture_detector.tflite \
-  --labels labels.txt
+python3 classify_picamera.py  --model gesture_detector.tflite  --labels labels.txt
 ```
 
 You should see the camera feed appear on the monitor attached to your Raspberry
