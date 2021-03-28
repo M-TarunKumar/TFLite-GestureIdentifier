@@ -45,9 +45,7 @@ def classify_image(interpreter, image, top_k=1):
   set_input_tensor(interpreter, image)
   interpreter.invoke()
   output_details = interpreter.get_output_details()[0]
-  print("output_details: ", output_details)
   output = np.squeeze(interpreter.get_tensor(output_details['index']))
-  print("output: " , output)
 
   # If the model is quantized (uint8 data), then dequantize the results
   if output_details['dtype'] == np.uint8:
@@ -76,7 +74,7 @@ def main():
 
   with picamera.PiCamera(resolution=(640, 480), framerate=30) as camera:
     camera.start_preview()
-    camera.start_recording('video.h264')
+    # camera.start_recording('video.h264')  #uncomment this line if you want to record video.
     try:
       stream = io.BytesIO()
       for _ in camera.capture_continuous(
@@ -94,7 +92,7 @@ def main():
                                                     elapsed_ms)
     finally:
       camera.stop_preview()
-      camera.stop_recording()
+      # camera.stop_recording()  #uncomment this line if you want to record video.
 
 
 if __name__ == '__main__':
