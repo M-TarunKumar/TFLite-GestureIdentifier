@@ -53,7 +53,6 @@ def classify_image(interpreter, image, top_k=1):
     output = scale * (output - zero_point)
 
   ordered = np.argpartition(-output, top_k)
-  print("ordered: " , ordered)
   return [(i, output[i]) for i in ordered[:top_k]]
 
 
