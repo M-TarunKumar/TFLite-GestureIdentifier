@@ -43,14 +43,11 @@ First, clone this Git repo onto your Raspberry Pi like this:
 git clone https://github.com/M-TarunKumar/TFLite-GestureIdentifier.git
 ```
 
-Then use Tensorflow script to install a couple of Python packages, and
-download the model and labels file:
+Then use download.sh script to install a couple of Python packages:
 
 ```
-cd examples/lite/examples/image_classification/raspberry_pi
-
 # The script takes an argument specifying where you want to save the model files
-bash download.sh /tmp
+bash download.sh
 ```
 
 
